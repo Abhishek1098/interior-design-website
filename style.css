@@ -1,0 +1,173 @@
+/*navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+/*image gallery*/
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*About us*/
+
+.bio-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	background-color: #E5E5E5;
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 25px;
+	box-shadow: 2px 2px 5px black;
+}
+
+.bio {
+	width: 70%;
+}
+
+.profile-pic {
+	margin: auto;
+	width: 25%;
+	height: 25%;
+	border: 2px solid black;
+	border-radius: 100%;
+	box-shadow: 2px 2px 5px gray;
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+	.logo-img {
+		width: 40%;
+		height: auto;
+	}
+	
+	nav {
+		cursor: pointer;
+	}
+	
+	#nav-container {
+		display: none;
+		flex-direction: column;
+		width: 82.5%;
+	}
+	
+	.nav-button {
+		width: 97.5%;
+	}
+	
+	.error-container {
+		width: 75%;
+	}
+	
+	.schedule-split-container {
+		flex-direction: column;
+	}
+	
+	.schedule-split-view {
+		width: 85%;
+	}
+	
+	.module-container {
+		width: 75%;
+	}
+	
+	.bio-container {
+		flex-direction: column-reverse;
+	}
+	
+	.bio {
+		width: auto;
+	}
+	
+	.profile-pic {
+		width: 50%;
+		height: auto;
+	}
+}
+
+@media (min-width: 601px) {
+	.nav-vertical {
+		display: none;
+	}
+}
+
+
+/*Header*/
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
